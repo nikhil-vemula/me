@@ -1,0 +1,25 @@
+<style>
+    .jumbotron {
+        background: transparent;
+    }
+    
+    .col-sm-4 {
+        padding: 10px;
+    }
+    
+    .project-card {
+        height: 200px;
+    }
+</style>
+<div class="container-fluid">
+    <div class="jumbotron w3-card-2 w3-blue text-center w3-large w3-text-white">
+        <h1>Projects</h1>
+    </div>
+    <div class="col-sm-3" ng-repeat="x in projects">
+        <a href="#">  
+            <div class="project-card w3-card-4 w3-white w3-large w3-center">
+                <h2>{{x}}</h2>
+            </div>
+        </a>
+    </div>
+</div>

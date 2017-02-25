@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- style sheets -->
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,25 +14,46 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.js"></script>
 
 <body class="w3-lightgray" ng-app="myApp">
-    <div ng-view></div>
+    <!--<span style="color:teal;position: absolute;top: 30px;left: 30px;" onclick=""><i class="fa fa-arrow-circle-left fa-5x" aria-hidden="true"></i></span>-->
+    <div class="page {{pageClass}} container-fluid" ng-view></div>
     <script>
-        var app = angular.module("myApp", ["ngRoute"]);
+        var app = angular.module("myApp", ["ngRoute", 'ngAnimate']);
         app.config(function ($routeProvider) {
             $routeProvider
-                .when("/", {
-                    templateUrl: "main.html"
+                .when("/main", {
+                    templateUrl: "main.html",
+                    controller: 'mainController'
                 })
                 .when("/profile", {
-                    templateUrl: "profile.html"
+                    templateUrl: "profile.html",
+                    controller: 'profileController'
                 })
-                .when("/green", {
-                    templateUrl: "profile.html"
+                .when("/projects", {
+                    templateUrl: "projects.html",
+                    controller: 'projectsController'
                 })
                 .when("/blue", {
-                    templateUrl: "blue.htm"
+                    templateUrl: "blue.htm",
+                    controller: 'mainController'
+                })
+                .otherwise({
+                    "redirectTo": "/main"
                 });
+        });
+        app.controller('mainController', function ($scope) {
+            $scope.pageClass = 'page-main';
+        });
+
+        app.controller('profileController', function ($scope) {
+            $scope.pageClass = 'page-profile';
+        });
+
+        app.controller('projectsController', function ($scope) {
+            $scope.pageClass = 'page-projects';
+            $scope.projects = ['a', 'b', 'c','d','e']
         });
     </script>
 </body>
