@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
-<body>
+<!-- style sheets -->
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/style.css">
 
-<div ng-app="">
-  <p>Name : <input type="text" ng-model="name"></p>
-  <h1>Hello {{name}}</h1>
-</div>
+<body class="w3-lightgray">
+
+  <div class="container-fluid">
+    <div class="hidden-xs" id="spacer"></div>
+    <div class="row ">
+      <div class="col-sm-4 text-center">
+        <div class=" card  w3-cyan w3-large w3-text-white w3-padding-12">
+          <i class="fa fa-user fa-4x" aria-hidden="true"></i>
+          <h2>Profile
+            <h2>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="card   w3-blue w3-large w3-text-white w3-padding-12">
+          <i class="fa fa-code fa-4x" aria-hidden="true"></i>
+          <h2>Projects
+            <h2>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="card w3-teal w3-large w3-text-white w3-padding-12">
+          <i class="fa fa-download fa-4x" aria-hidden="true"></i>
+          <h2>Resume
+            <h2>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center w3-padding-24">
+      <a class="btn btn-social-icon btn-facebook">
+        <span class="fa fa-facebook fa-4x"></span>
+      </a>
+      <a class="btn btn-social-icon btn-google">
+        <span class="fa fa-google fa-4x"></span>
+      </a>
+      <a class="btn btn-social-icon btn-twitter">
+        <span class="fa fa-twitter fa-4x"></span>
+      </a>
+      <a class="btn btn-social-icon btn-linkedin">
+        <span class="fa fa-linkedin fa-4x"></span>
+      </a>
+      <a class="btn btn-social-icon btn-github">
+        <span class="fa fa-github fa-4x"></span>
+      </a>
+    </div>
+  </div>
 
 </body>
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </html>
