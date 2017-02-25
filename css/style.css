@@ -1,12 +1,17 @@
+body{
+  background: url("../images/pattern.png");
+}
 #spacer {
   width: 100wh;
   height: 30vh;
 }
 .card{
-  cursor: pointer;
   margin: 10px;
   box-shadow: .8px 5px 10px grey;
 }
 .card:hover {
   box-shadow: 1px 8px 20px grey;
+}
+a,a:hover{
+  text-decoration: none;
 }
