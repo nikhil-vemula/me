@@ -1,8 +1,9 @@
 body {
   /*background: url("../images/pattern.png");*/
+  font-family: 'Slabo 27px', serif;
 }
 
-.container-fuid {
+.container-fluid {
   padding: 0px;
 }
 
@@ -11,7 +12,8 @@ body {
 }
 
 a,
-a:hover {
+a:hover,
+a:foucs {
   text-decoration: none;
 }
 

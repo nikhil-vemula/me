@@ -1,8 +1,69 @@
 <style>
-.jumbotron{
-    background: transparent;
-}
+    .jumbotron {
+        background: transparent;
+    }
+    
+    .about .para {
+        min-height: 60vh;
+        font-family: 'Open Sans', sans-serif;
+        text-align: justify;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .skills {
+        height: 100vh;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .card {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
-<div class="container-fluid text-center w3-white">
-    <div class="jumbotron w3-card-2 w3-cyan  w3-large w3-text-white"><h1>Vemula Srinivasa Nikhil</h1></div>
+<div class="container-fluid w3-white">
+    <div class="jumbotron w3-center w3-card-2 w3-cyan  w3-large w3-text-white row">
+        <span class="col-sm-2" style="color:white;cursor:pointer;" onclick="window.history.back()"><i class="fa fa-arrow-circle-left fa-4x" aria-hidden="true"></i></span>
+        <div class="col-sm-8">
+            <h1>Vemula Srinivasa Nikhil</h1>
+            <h2>vsrinivasanikhil@gmail.com</h2>
+        </div>
+    </div>
+    <div class="about w3-center row">
+        <h1>About</h1>
+        <hr style="border:1px solid teal;margin: 20px auto; width:10%;" />
+        <div class="para w3-xlarge">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum
+        </div>
+    </div>
+    <div class="skills container">
+        <h1 class="w3-center">Skills</h1>
+        <hr style="border:1px solid teal;margin: 20px auto; width:10%;" />
+        <div class="proglang row">
+            <h2>Programming Languages</h2>
+            <hr style="border:1px solid teal; width:20%;" />
+            <div class="col-sm-2 w3-xxlarge card">C</div>
+            <div class="col-sm-2 w3-xxlarge card">C++</div>
+            <div class="col-sm-2 w3-xxlarge card">Java</div>
+            <div class="col-sm-2 w3-xxlarge card">Python</div>
+            <div class="col-sm-2 w3-xxlarge card">HTML and CSS</div>
+            <div class="col-sm-2 w3-xxlarge card">Javascript</div>
+            <!--<div class="col-sm-2 w3-xxlarge card">Bootstrap</div>-->
+        </div>
+        <div class="webframeworks row">
+            <h2>Web Development Frameworks</h2>
+            <hr style="border:1px solid teal; width:25%;" />
+            <div class="col-sm-2 w3-xxlarge card">Bootstrap</div>
+            <div class="col-sm-2 w3-xxlarge card">AngularJs</div>
+            <div class="col-sm-2 w3-xxlarge card">Polymer</div>
+
+        </div>
+    </div>
 </div>
