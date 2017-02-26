@@ -13,7 +13,7 @@ body {
 
 a,
 a:hover,
-a:foucs {
+a:focus {
   text-decoration: none;
 }
 
