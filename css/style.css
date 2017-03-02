@@ -1,6 +1,7 @@
 body {
   /*background: url("../images/pattern.png");*/
   font-family: 'Slabo 27px', serif;
+  overflow: autol=;
 }
 
 .container-fluid {
