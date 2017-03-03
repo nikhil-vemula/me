@@ -1,4 +1,5 @@
 <style>
+    @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
     .jumbotron {
         background: transparent;
     }
@@ -8,23 +9,25 @@
     }
     
     .project-card {
+        font-family: 'Roboto', sans-serif;
         height: 200px;
         position: relative;
+        margin: 10px;
     }
-    .project-card .name{
+    
+    .project-card .name {
+        margin: 0px auto;
         position: absolute;
-        top: 15%;
-        left: 20%;
+        top: 30%;
+        text-align: center;
+        width: 100%;
     }
-    .project-card .link{
+    
+    .project-card .link {
         position: absolute;
         bottom: 0%;
         width: 100%;
-        background: blue;
-        margin: 0px;
-    }
-    a, a:hover{
-        color: white;
+        border-top: 1px solid rgba(160, 160, 160, 0.2);
     }
 </style>
 <div class="container-fluid">
@@ -34,12 +37,14 @@
             <h1>Projects</h1>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="col-sm-3" ng-repeat="x in projects">
-                <div class="project-card w3-card-4 w3-white w3-large w3-center">
-                    <h1 class="name">{{x.name}}</h1>
-                    <a href="#"><h2 class="link">{{x.link}}</h2></a>
-                </div>
+            <div class="project-card w3-card-4 w3-white w3-large w3-center">
+                <h1 class="name">{{x.name}}</h1>
+                <a href="#">
+                    <h2 class="link"> <i class="fa fa-github " aria-hidden="true"></i>{{x.link}}</h2>
+                </a>
+            </div>
         </div>
     </div>
 </div>
