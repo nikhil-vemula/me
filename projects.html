@@ -27,7 +27,9 @@
         text-align: left;
         width: 100%;
     }
-    
+    .project-card .tags{
+        margin: 5px;
+    }
     .project-card .link {
         position: absolute;
         bottom: 0%;
@@ -46,10 +48,11 @@
         <div class="col-sm-3" ng-repeat="x in projects">
             <div class="project-card w3-card-4 w3-white w3-large w3-center">
                 <div class="title">
-                    <h1 class="">{{x.name}}</h1>
+                    <h3 class="">{{x.name}}</h3>
                 </div>
                 <div class="desc">
-                    <p>A brief description of the project</p>
+                    <p>{{x.desc}}</p>
+                    <span  ng-repeat="y in x.tags"class="tags label label-info">{{y}}</span>
                 </div>
                 <a href="{{x.link}}">
                     <h2 class="link"> <i class="fa fa-github " aria-hidden="true"></i>github</h2>
